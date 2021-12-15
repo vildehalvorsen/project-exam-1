@@ -1,0 +1,284 @@
+h1 {
+    margin: 0px 0px -20px;
+    color: rgba(255, 255, 255, 0);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 70px 0px 50px;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+
+/* All sections */
+
+.latestSection,
+.aboutSection,
+.signUpSection {
+    width: 280px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+
+/* Latest posts section */
+
+.arrows {
+    display: none;
+}
+
+.latestSection {
+    width: 300px;
+    margin: 50px auto 150px;
+}
+
+.latestPosts {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.slides {
+    margin: 10px;
+}
+
+.slides:hover {
+    transform: scale(1.05);
+}
+
+.slides h3 {
+    background-color: #b6d4dd;
+    color: black;
+    padding: 20px 0px;
+    margin-top: -10px;
+}
+
+.slides h4,
+.slides p,
+.slides li,
+.slides ol,
+.slides figcaption {
+    display: none;
+}
+
+.slides .wp-block-image {
+    padding: 0px;
+    margin: 0px;
+}
+
+.slides img {
+    height: 180px;
+    width: 250px;
+}
+
+
+/* About section */
+
+.aboutSection p {
+    font-size: 1.15em;
+    padding-bottom: 20px;
+}
+
+
+/* Sign up section */
+
+form {
+    width: 225px;
+    margin: 0px auto;
+}
+
+form label {
+    display: none;
+}
+
+input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 200px;
+    padding: 12px;
+}
+
+#email {
+    margin-top: 25px
+}
+
+input:focus {
+    border: 2px solid #000000;
+}
+
+#fullNameError,
+#emailError {
+    display: none;
+    font-size: 0.8em;
+    text-align: left;
+    color: rgb(172, 23, 23);
+    padding: 0px;
+    margin: 0px;
+}
+
+.formContainer p {
+    margin: -20px 0px 40px;
+}
+
+
+/* Media Queries */
+
+@media all and (min-width: 500px) {
+    p {
+        font-size: 1em;
+    }
+    /* All sections */
+    .latestSection,
+    .aboutSection,
+    .signUpSection {
+        width: 400px;
+    }
+    /* Latest posts section */
+    .latestPosts {
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    /* All sections */
+    .latestSection,
+    .aboutSection,
+    .signUpSection {
+        width: 500px;
+        margin: 170px auto;
+    }
+    /* Latest posts section */
+    .latestPosts {
+        width: 500px;
+    }
+    /* Sign up section */
+    input {
+        width: 220px;
+    }
+    .formContainer p {
+        margin: -20px auto 40px;
+        width: 400px;
+    }
+    form {
+        width: 246px;
+        margin: 0px auto;
+    }
+}
+
+@media all and (min-width: 700px) {
+    /* All sections */
+    .latestSection,
+    .aboutSection,
+    .signUpSection {
+        width: 600px;
+    }
+    /* Latest posts section */
+    .latestPosts {
+        width: 600px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 750px;
+    }
+    .arrows {
+        position: relative;
+        top: -190px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px;
+    }
+    .fa-chevron-left,
+    .fa-chevron-right {
+        color: rgb(7, 39, 44, 0.6);
+        font-size: 2.5em;
+    }
+    .fa-chevron-left:hover,
+    .fa-chevron-right:hover {
+        color: rgba(219, 131, 0, 0.6);
+        transform: scale(1.3);
+    }
+    .latestPosts {
+        width: 650px;
+        overflow-x: hidden;
+    }
+    .slides img {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    p {
+        font-size: 1.1em;
+    }
+    /* Latest posts section */
+    .latestSection {
+        width: 850px;
+    }
+    .arrows {
+        top: -230px;
+    }
+    .latestPosts {
+        width: 750px;
+    }
+    .slides img {
+        height: 300px;
+        width: 350px;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 950px;
+    }
+    .latestPosts {
+        width: 850px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 1050px;
+    }
+    .latestPosts {
+        width: 950px;
+    }
+}
+
+@media all and (min-width: 1300px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 1200px;
+    }
+    .latestPosts {
+        width: 1100px;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 1300px;
+    }
+    .latestPosts {
+        width: 1200px;
+    }
+    .slides img {
+        height: 330px;
+        width: 380px;
+    }
+}

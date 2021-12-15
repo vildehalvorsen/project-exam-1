@@ -1,0 +1,90 @@
+h1 {
+    color: rgba(0, 0, 0, 0);
+    margin: 0px 0px -10px;
+}
+
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 120px auto 0px;
+}
+
+.blogPost {
+    margin: 0px auto 20px;
+}
+
+.blogPost:hover {
+    transform: scale(1.04);
+}
+
+.contentInfo {
+    background-color: #b6d4dd;
+    color: black;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: -10px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+#date {
+    color: rgb(56, 56, 56);
+    font-size: 0.8em;
+}
+
+.blogContainer h4,
+.blogContainer p,
+.blogContainer li,
+.blogContainer ol,
+.blogContainer figcaption {
+    display: none;
+}
+
+.wp-block-image {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+
+/* Media Queries */
+
+@media all and (min-width: 500px) {
+    img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    img {
+        height: 325px;
+        width: 450px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .blogContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 800px;
+    }
+    .blogPost {
+        margin: 50px 20px 20px;
+    }
+    img {
+        height: 250px;
+        width: 350px;
+    }
+}

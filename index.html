@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Hotjar Tracking Code for the UNIVERSE -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2614363,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog about the universe, the greatest ever made.">
+    <link rel="stylesheet" href="https://use.typekit.net/yen1uje.css">
+    <script src="https://kit.fontawesome.com/292441d70e.js" crossorigin="anonymous"></script>
+    <link href="/css/global.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
+    <title>the UNIVERSE | Home</title>
+</head>
+
+<body>
+    <div class="headerImage"></div>
+    <i class="fas fa-bars"></i>
+    <div class="logo"><a href="/index.html">the <span>universe</span></a></div>
+    <header>
+        <nav>
+            <i class="fas fa-times"></i>
+            <ul>
+                <li class="active">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>a blog about the greatest ever made</h1>
+        <div class="latestSection">
+            <h2>Latest posts</h2>
+            <div class="latestPosts">
+                <div class="loader"><i class="fas fa-star"></i></div>
+            </div>
+            <div class="images"></div>
+            <div class="arrows">
+                <i class="fas fa-chevron-left" id="leftArrow"></i>
+                <i class="fas fa-chevron-right" id="rightArrow"></i>
+            </div>
+        </div>
+        <div class="aboutSection">
+            <h2>About</h2>
+            <p>My name is Vilde and I have a huge fascination for the universe. Imagine, everything started out there somewhere, and everything will probably end there as well. Unless you believe ...</p>
+            <div class="globalButton">
+                <a href="/about.html">Read more</a>
+            </div>
+        </div>
+        <div class="signUpSection">
+            <h2>Sign up to stay updated</h2>
+            <div class="formContainer">
+                <p class="info">Join our weekly mailing list and be the first to know when there is a new post or other great news about the universe.</p>
+                <form method="POST">
+                    <div>
+                        <label for="fullname">Full name*</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe">
+                        <p id="fullNameError" aria-errormessage="Please fill in a valid name">Please fill in a valid name</p>
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="janedoe@mail.com">
+                        <p id="emailError" aria-errormessage="Please fill in a valid e-mail address">Please fill in a valid e-mail address</p>
+                    </div>
+
+                    <div class="globalButton">
+                        <button id="signUpButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="back">
+            <p>Back to top</p>
+        </div>
+        <p>Vilde Halvorsen</p>
+        <p>Copyright &copy; 2021</p>
+
+    </footer>
+    <script src="/js/global.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/validation/validation.js"></script>
+    <script src="/js/validation/error.js"></script>
+</body>
+
+</html>
