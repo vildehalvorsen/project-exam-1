@@ -9,6 +9,8 @@ const blogContainer = document.querySelector(".blogContainer");
 const loadButton = document.querySelector("#loadMoreButton");
 const globalButton = document.querySelector(".globalButton");
 
+const searchBar = document.querySelector("#search");
+
 
 async function getList() {
     try {
@@ -22,8 +24,7 @@ async function getList() {
             const title = results[i].title.rendered;
             const date = results[i].date;
 
-            console.log(results[i].id);
-
+            console.log(results[i].title.rendered);
 
             blogContainer.innerHTML += `<div class="blogPost">
                                             <a href="/blogSpecific.html?id=${results[i].id}">
@@ -56,4 +57,13 @@ getList();
 loadButton.addEventListener("click", function() {
     countNumber();
     getList();
+});
+
+/* Search Bar */
+
+searchBar.addEventListener("keyup", function(e) {
+    searchString = e.target.value;
+    console.log(searchString);
+
+
 });

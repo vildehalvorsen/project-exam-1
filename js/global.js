@@ -12,6 +12,7 @@ cross.onclick = function() {
 }
 
 
+
 /* Footer */
 
 const toTopLink = document.querySelector(".back");

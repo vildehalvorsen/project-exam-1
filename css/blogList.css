@@ -57,6 +57,30 @@ footer {
 }
 
 
+/* Search bar */
+
+.searchBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+}
+
+.searchBox label {
+    color: #1e3b44;
+    font-size: 1.6em;
+    margin: 4px 0px 4px -40px;
+    z-index: 100;
+}
+
+.searchBox input {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 200px;
+}
+
+
 /* Media Queries */
 
 @media all and (min-width: 500px) {
